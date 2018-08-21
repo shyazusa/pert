@@ -1,3 +1,4 @@
+'use strict';
 const calcTime = () => {
   const best = Number(document.getElementById('best').value);
   const most = Number(document.getElementById('most').value);
