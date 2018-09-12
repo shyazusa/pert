@@ -2,15 +2,55 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>pert</title>
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
   </head>
   <body>
-    最良時間: <input type="text" id="best">[h]<br>
-    最有力時間: <input type="text" id="most">[h]<br>
-    最悪時間: <input type="text" id="worst">[h]<br>
-    <input type="button" value="計算" onclick="calcTime();">
-
-    <div id="ans"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-2">
+          <p class="text-right">最良時間: </p>
+        </div>
+        <div class="col-md-6">
+          <input type="text" id="best">[h]
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="text-right">最有力時間: </p>
+        </div>
+        <div class="col-md-6">
+          <input type="text" id="most">[h]
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="text-right">最悪時間: </p>
+        </div>
+        <div class="col-md-6">
+          <input type="text" id="worst">[h]
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <input type="button" value="計算" onclick="calcTime();">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="text-right">結果: </p>
+        </div>
+        <div class="col-md-6">
+          <code id="ans"></code>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
