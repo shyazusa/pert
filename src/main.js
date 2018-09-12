@@ -1,5 +1,8 @@
-'use strict';
-const calcTime = () => {
+const $ = require('jquery');
+const bootstrap = require('bootstrap');
+require('bootstrap/dist/css/bootstrap.css');
+
+calcTime = () => {
   const best = Number(document.getElementById('best').value);
   const most = Number(document.getElementById('most').value);
   const worst = Number(document.getElementById('worst').value);

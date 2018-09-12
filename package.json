@@ -1,0 +1,29 @@
+{
+  "name": "pert",
+  "version": "1.0.0",
+  "description": "[エンジニアが知っておきたい工数見積もり術！ \" 無理ゲー進行 \"から脱するために大切なコト \\- エンジニアHub｜若手Webエンジニアのキャリアを考える！](https://employment.en-japan.com/engineerhub/entry/2017/08/28/110000#PERT%E6%B3%95%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shyazusa/pert.git"
+  },
+  "keywords": [],
+  "author": "shy_azusa <shy.azusa@gmail.com> (https://github.com/shyazusa)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shyazusa/pert/issues"
+  },
+  "homepage": "https://github.com/shyazusa/pert#readme",
+  "devDependencies": {
+    "bootstrap": "^4.1.3",
+    "css-loader": "^1.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.18.0",
+    "webpack-cli": "^3.1.0"
+  }
+}
