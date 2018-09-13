@@ -3,9 +3,9 @@ const bootstrap = require('bootstrap');
 require('bootstrap/dist/css/bootstrap.css');
 
 calcTime = () => {
-  const best = Number(document.getElementById('best').value);
-  const most = Number(document.getElementById('most').value);
-  const worst = Number(document.getElementById('worst').value);
-  const ans = Number((best + most * 4 + worst) / 6);
-  document.getElementById('ans').innerHTML = ans;
+  const best = parseInt($('#best').val());
+  const most = parseInt($('#most').val());
+  const worst = parseInt($('#worst').val());
+  const ans = ((best + most * 4 + worst) / 6);
+  $('#ans').html(ans);
 }

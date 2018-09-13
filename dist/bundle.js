@@ -193,7 +193,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\nconst bootstrap = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n__webpack_require__(/*! bootstrap/dist/css/bootstrap.css */ \"./node_modules/bootstrap/dist/css/bootstrap.css\");\n\ncalcTime = () => {\n  const best = Number(document.getElementById('best').value);\n  const most = Number(document.getElementById('most').value);\n  const worst = Number(document.getElementById('worst').value);\n  const ans = Number((best + most * 4 + worst) / 6);\n  document.getElementById('ans').innerHTML = ans;\n}\n\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("const $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\nconst bootstrap = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n__webpack_require__(/*! bootstrap/dist/css/bootstrap.css */ \"./node_modules/bootstrap/dist/css/bootstrap.css\");\n\ncalcTime = () => {\n  const best = parseInt($('#best').val());\n  const most = parseInt($('#most').val());\n  const worst = parseInt($('#worst').val());\n  const ans = ((best + most * 4 + worst) / 6);\n  $('#ans').html(ans);\n}\n\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ })
 
